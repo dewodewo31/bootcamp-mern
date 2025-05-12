@@ -43,9 +43,6 @@ const create = async (req, res, next) => {
 
 const update = async (req, res, next) => {
   try {
-    const { id } = req.params;
-    const { name } = req.body;
-
     const result = await updateCategories(req);
 
     res.status(StatusCodes.OK).json({
